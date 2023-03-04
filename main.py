@@ -17,7 +17,3 @@ def variance(data=[],*args):
 def sv(data=[],*args):
     sv_val=variance(data)**0.5
     return round(sv_val,4)
-
-print(mean(a,4))
-print(variance(a))
-print(sv(a))
