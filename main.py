@@ -1,11 +1,11 @@
 a=[5,10,6,4,2,7,3,4,1]
 
-def mean(data=[],int r,*args):
+def mean(data=[],*args):
     sum=0
     for i in range(0,len(data)):
         sum+=data[i]
     mean_val=sum/len(data)
-    return round(mean_val,r)
+    return round(mean_val,4)
 
 def variance(data=[],*args):
     var=0
