@@ -1,19 +1,17 @@
-a=[5,10,6,4,2,7,3,4,1]
-
-def mean(data=[],*args):
+def mean(data,r):
     sum=0
     for i in range(0,len(data)):
         sum+=data[i]
     mean_val=sum/len(data)
-    return round(mean_val,4)
+    return round(mean_val,r)
 
-def variance(data=[],*args):
+def var(data,r):
     var=0
     for i in range(0,len(data)):
-         var+=(data[i]-mean(data))**2
+         var+=(data[i]-mean(data,r))**2
     var_val=var/len(data)
-    return round(var_val,4)
+    return round(var_val,r)
 
-def sv(data=[],*args):
-    sv_val=variance(data)**0.5
-    return round(sv_val,4)
+def sv(data,r):
+    sv_val=var(data,r)**0.5
+    return round(sv_val,r)
